@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Element 'Ship Date'",
+  "Type": "Element",
+  "Id": "9yUa9W7lGEqHOJ2gn1gxcA",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/9yUa9W7lGEqHOJ2gn1gxcA",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/HrkLnLQufUq9vmeWOuLBKg",
+  "Created": "2025-10-06T06:48:59.8144129Z",
+  "Updated": "2025-10-06T06:48:59.8144129Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

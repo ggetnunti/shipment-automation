@@ -1,0 +1,14 @@
+﻿{
+  "Name": "8121848276-Noble Fox",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "uTTTCCR-7UOj6nD1j-eBPg",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/uTTTCCR-7UOj6nD1j-eBPg",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/HrkLnLQufUq9vmeWOuLBKg",
+  "Created": "2025-10-06T15:38:41.1027523Z",
+  "Updated": "2025-10-06T15:38:41.1027523Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

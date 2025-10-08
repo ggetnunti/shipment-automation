@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uHpvNqne8E6tt2dr_UwSGQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="e4576535-c3fc-4e13-9b53-5373d36c6a44" CvTextArea="1583, 204, 37, 13" CvTextArgument="Active" CvType="Text" DesignTimeRectangle="1551, 195, 323, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' /&gt;" Guid="244c1e59-befa-426a-8b2a-a83abe24f1f6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e4576535-c3fc-4e13-9b53-5373d36c6a44" CvElementArea="1873, 194, 28, 33" CvType="Button" DesignTimeRectangle="1874, 195, 26, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;div&amp;gt;app-table-top&amp;gt;div&amp;gt;div&amp;gt;button' idx='2' tag='BUTTON' /&gt;" Guid="aecad678-c63d-4473-a27b-b76162e0c230" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d6618ea2b6ea3f108e5945bf6854dfdf.png" xmlns="">0I0WOuKkYUky31fkqanZ8bQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

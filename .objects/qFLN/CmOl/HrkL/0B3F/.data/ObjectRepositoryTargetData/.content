@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0qOmDlIHLUexgw2VcB7m2Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="d0993501-988c-4f5a-9815-efe838054ec0" CvTextArea="788, 325, 45, 13" CvTextArgument="Carrier" CvType="Text" DesignTimeRectangle="789, 321, 74, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='1' tag='NZ-TABLE-SORTERS' /&gt;" Guid="42d82f45-2874-429c-989d-55a03765bb80" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d0993501-988c-4f5a-9815-efe838054ec0" CvTextArea="698, 325, 23, 13" CvTextArgument="DIS" CvType="Text" DesignTimeRectangle="699, 321, 74, 22" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='ant-table-column-sorters ng-star-inserted' tag='NZ-TABLE-SORTERS' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DIS' /&gt;" Guid="54ddeb89-db35-4e9b-bff6-1002da72506b" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="62d7549bfe22cc4159f614710b592650.png" xmlns="">0EMsWj7gGsEiYCRSNfUCgyA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

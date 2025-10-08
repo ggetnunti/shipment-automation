@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="udyWjjFt6kSgHp3cupxiIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="4d9899c3-6c8e-40aa-aef4-30710c5a8606" CvElementArea="1873, 194, 28, 34" CvType="Button" DesignTimeRectangle="1874, 195, 26, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;div&amp;gt;app-table-top&amp;gt;div&amp;gt;div&amp;gt;button' idx='2' tag='BUTTON' /&gt;" Guid="b44b6b59-b8c4-4eab-9eb0-fe49a715603b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1551, 195, 323, 32" FuzzySelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' type='' class='ant-select-selector ng-tns-c85-608' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Active&amp;#xA; Ship Date:' /&gt;" Guid="cf429ae5-e3ec-4433-af72-7a342581d4c0" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="510447b348950d0ce82d6febe4b3b92b.png" xmlns="">0IF9OXTKQ_k6wbP-0edSlOw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

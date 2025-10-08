@@ -1,0 +1,451 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Globalization</x:String>
+      <x:String>CsvHelper.Configuration.Attributes</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.ExtractData</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>CsvHelper</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1001,4784" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      <Variable x:TypeArguments="s:DateTime" Name="shipDate" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="662,1039" sap2010:WorkflowViewState.IdRef="Sequence_5">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="input_date" />
+        <Variable x:TypeArguments="x:String" Name="newFolderPath" />
+        <Variable x:TypeArguments="x:String" Name="selectedFolder" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="452,275" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="โปรดระบุ Ship Date (วัน/เดือน/ปี)" Title="Ship Date" TopMost="False">
+        <ui:InputDialog.Result>
+          <OutArgument x:TypeArguments="x:String">[input_date]</OutArgument>
+        </ui:InputDialog.Result>
+      </ui:InputDialog>
+      <Assign sap:VirtualizedContainerService.HintSize="452,116" sap2010:WorkflowViewState.IdRef="Assign_2">
+        <Assign.To>
+          <OutArgument x:TypeArguments="s:DateTime">[shipDate]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="s:DateTime" xml:space="preserve">[DateTime.ParseExact(
+    input_date,
+    {"d/M/yyyy", "dd/MM/yyyy", "d/M/yy"},
+    System.Globalization.CultureInfo.InvariantCulture,
+    Globalization.DateTimeStyles.None
+)]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:SelectFolder DisplayName="Browse For Folder" sap:VirtualizedContainerService.HintSize="452,112" sap2010:WorkflowViewState.IdRef="SelectFolder_1" SelectedFolder="[selectedFolder]" />
+      <Assign sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[newFolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">[Path.Combine(selectedFolder, shipDate.ToString("d-M-yy"))]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <If Condition="[Not Directory.Exists(newFolderPath)]" sap:VirtualizedContainerService.HintSize="452,329" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Then>
+          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CreateDirectory Output="{x:Null}" ContinueOnError="False" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_2" Path="[newFolderPath]" />
+          </Sequence>
+        </If.Then>
+        <If.Else>
+          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </If.Else>
+      </If>
+    </Sequence>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Shipments - Manufacturing - Plaid ERP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="662,3722" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,3481" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_FedEx" />
+              <Variable x:TypeArguments="sd:DataTable" Name="dt_DHL" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="594,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type 'Date' Into 'Search'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Text="[shipDate.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V5">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="e4576535-c3fc-4e13-9b53-5373d36c6a44" ContentHash="uHpvNqne8E6tt2dr_UwSGQ" CvTextArea="1583, 204, 37, 13" CvTextArgument="Active" CvType="Text" DesignTimeRectangle="1551, 195, 323, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' /&gt;" Guid="244c1e59-befa-426a-8b2a-a83abe24f1f6" InformativeScreenshot="d6618ea2b6ea3f108e5945bf6854dfdf.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/JhHVFRPQ3kG2YpB2ppu4tA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="e4576535-c3fc-4e13-9b53-5373d36c6a44" CvElementArea="1873, 194, 28, 33" CvType="Button" DesignTimeRectangle="1874, 195, 26, 32" ElementType="Button" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;div&amp;gt;app-table-top&amp;gt;div&amp;gt;div&amp;gt;button' idx='2' tag='BUTTON' /&gt;" Guid="aecad678-c63d-4473-a27b-b76162e0c230" SearchSteps="Selector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.VerifyOptions>
+                <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionTypeIntoOptions.Retry>
+                  <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                </uix:VerifyExecutionTypeIntoOptions>
+              </uix:NTypeInto.VerifyOptions>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ship Date'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,227" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" ContentHash="a7QDOZD2tESSJoUZnIS8Nw" CvTextArea="1562, 276, 64, 16" CvTextArgument="Ship Date:" CvType="Text" DesignTimeRectangle="1563, 273, 60, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ship Date' parentid='cdk-overlay-0' tag='SPAN' /&gt;" Guid="c8e98550-9ada-4d87-bbe0-6c11e93ffa91" InformativeScreenshot="d3b5444ff29ade57669bf498ef5d6a18.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/8c0gCLUwCUyw60YK9kK6fA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" CvTextArea="1562, 308, 45, 13" CvTextArgument="Carrier:" CvType="Text" DesignTimeRectangle="1563, 305, 41, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Carrier' parentid='cdk-overlay-0' tag='SPAN' type='' class='ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Carrier' /&gt;" Guid="70443ef9-92df-4aa8-a329-55a1bbf078e7" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BUTTON'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,227" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="4d9899c3-6c8e-40aa-aef4-30710c5a8606" ContentHash="udyWjjFt6kSgHp3cupxiIw" CvElementArea="1873, 194, 28, 34" CvType="Button" DesignTimeRectangle="1874, 195, 26, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;div&amp;gt;app-table-top&amp;gt;div&amp;gt;div&amp;gt;button' idx='2' tag='BUTTON' /&gt;" Guid="b44b6b59-b8c4-4eab-9eb0-fe49a715603b" InformativeScreenshot="510447b348950d0ce82d6febe4b3b92b.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/_62qWZdN5USTfcoKLgKO4A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1551, 195, 323, 32" FuzzySelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' type='' class='ant-select-selector ng-tns-c85-608' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Active&amp;#xA; Ship Date:' /&gt;" Guid="cf429ae5-e3ec-4433-af72-7a342581d4c0" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on 'Carrier'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,227" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="d0993501-988c-4f5a-9815-efe838054ec0" ContentHash="0qOmDlIHLUexgw2VcB7m2Q" CvTextArea="788, 325, 45, 13" CvTextArgument="Carrier" CvType="Text" DesignTimeRectangle="789, 321, 74, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='1' tag='NZ-TABLE-SORTERS' /&gt;" Guid="42d82f45-2874-429c-989d-55a03765bb80" InformativeScreenshot="62d7549bfe22cc4159f614710b592650.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/0B3FlCrg3EWSZieAGcwu7w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="d0993501-988c-4f5a-9815-efe838054ec0" CvTextArea="698, 325, 23, 13" CvTextArgument="DIS" CvType="Text" DesignTimeRectangle="699, 321, 74, 22" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' class='ant-table-column-sorters ng-star-inserted' tag='NZ-TABLE-SORTERS' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='DIS' /&gt;" Guid="54ddeb89-db35-4e9b-bff6-1002da72506b" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="Element 'Element 'Ship Date''" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Target>
+                    <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="821259df-c979-4dcb-930c-41e007292dc2" ContentHash="1IVOdwwnvU6RtDhQG-SlXQ" CvTextArea="558, 325, 63, 16" CvTextArgument="Ship Date" CvType="Text" DesignTimeRectangle="559, 321, 124, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableCol='3' tableRow='1' tag='NZ-TABLE-SORTERS' /&gt;" Guid="c3c45d0f-84c3-4d00-8fa1-565606fc9a98" InformativeScreenshot="0a9b0f1994ad3a38ac8814c345ccb065.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/9yUa9W7lGEqHOJ2gn1gxcA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                  </uix:VerifyExecutionOptions.Target>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" DataTable="[ExtractDataTable]" DisplayName="Extract Table Data 'Extract Table Data'" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Table' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-0' ReferenceIdx='0' Name='Column-0' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-1' ReferenceIdx='1' Name='Shipment'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-2' ReferenceIdx='2' Name='Ship Date'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-3' ReferenceIdx='3' Name='Column-3' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-4' ReferenceIdx='4' Name='Carrier'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column-5' ReferenceIdx='5' Name='Column-5' IsDeleted='true'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;false&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract-table get_columns_name='1' get_empty_columns='1' columns_name_source='Longest'&gt;&lt;column name='Column-0' attr='fulltext' /&gt;&lt;column name='Column-1' attr='fulltext' /&gt;&lt;column name='Column-2' attr='fulltext' /&gt;&lt;column name='Column-3' attr='fulltext' /&gt;&lt;column name='Column-4' attr='fulltext' /&gt;&lt;column name='Column-5' attr='fulltext' /&gt;&lt;/extract-table&gt;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,190" sap2010:WorkflowViewState.IdRef="NExtractData_4" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="2c85bf6d-3de2-42b1-94d1-331883d34d59" CvElementArea="1770, 286, 17, 19" CvType="ArrowButton" DesignTimeRectangle="1773, 290, 12, 12" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;nz-card&amp;gt;div&amp;gt;div&amp;gt;nz-table&amp;gt;nz-spin&amp;gt;div&amp;gt;nz-pagination&amp;gt;ul&amp;gt;li&amp;gt;button&amp;gt;span&amp;gt;svg' idx='2' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='svg' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="db0da3ad-57a1-49d9-9708-1dbd9c4a8c8f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="0" Y="0" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://orders.mccapparel.com/manufacturing/shipments" ContentHash="XiSj6dq9MkWLnNYh80reWw" DesignTimeRectangle="225, 352, 1674, 1404" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;" Guid="f19d5e4a-50e7-4508-acaf-35aaf310d773" InformativeScreenshot="59cc85c285d10b1b5d4df64d6dcf17a5.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/ISWXBUJpjUe-kMLBHZxvhw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="594,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dt_DHL]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">["DHL"]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:FilterDataTable DataTable="[ExtractDataTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="594,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dt_FedEx]" SelectColumnsMode="Remove">
+              <ui:FilterDataTable.Filters>
+                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                  <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
+                    <ui:FilterOperationArgument.Column>
+                      <InArgument x:TypeArguments="x:Int32">[2]</InArgument>
+                    </ui:FilterOperationArgument.Column>
+                    <ui:FilterOperationArgument.Operand>
+                      <InArgument x:TypeArguments="x:String">["FedEx"]</InArgument>
+                    </ui:FilterOperationArgument.Operand>
+                  </ui:FilterOperationArgument>
+                </scg:List>
+              </ui:FilterDataTable.Filters>
+              <ui:FilterDataTable.SelectColumns>
+                <scg:List x:TypeArguments="InArgument" Capacity="4">
+                  <x:Null />
+                </scg:List>
+              </ui:FilterDataTable.SelectColumns>
+            </ui:FilterDataTable>
+            <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[dt_DHL]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="594,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="DHL" StartingCell="A1" WorkbookPath="Shipments.xlsx" />
+            <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[dt_FedEx]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="594,148" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="FedEx" StartingCell="A1" WorkbookPath="Shipments.xlsx" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="594,1451" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="558,1347" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="524,1287" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:ForEachRow.Body>
+                      <ActivityAction x:TypeArguments="sd:DataRow">
+                        <ActivityAction.Argument>
+                          <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
+                        </ActivityAction.Argument>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,1114" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                          <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="linkURL" />
+                          </Sequence.Variables>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If Condition="[row(&quot;Ship Date&quot;).ToString.Trim.Contains(shipDate.ToString(&quot;M/d/yy&quot;))]" sap:VirtualizedContainerService.HintSize="488,1054" sap2010:WorkflowViewState.IdRef="If_2">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,834" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <Sequence.Variables>
+                                  <Variable x:TypeArguments="x:String" Name="currentShipment" />
+                                </Sequence.Variables>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <Assign sap:VirtualizedContainerService.HintSize="452,115" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:String">[currentShipment]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:String">[row("Shipment").ToString.Trim]</InArgument>
+                                  </Assign.Value>
+                                </Assign>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on current Shipment" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,227" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Timeout="8000" Version="V5">
+                                  <uix:NClick.Target>
+                                    <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="6cfd6e30-1734-49cc-b5ab-11514e0c7825" ContentHash="X-MPZ8QPBk-92YeO7hgu6A" CvTextArgument="[currentShipment]" DesignTimeRectangle="279, 360, 144, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;&lt;webctrl class='ng-star-inserted' tableRow='2' tag='SPAN' /&gt;" Guid="e0454119-702f-4665-bec8-134f9dfe7239" InformativeScreenshot="986507363ed6e010c5088dd184d5e27e.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/uTTTCCR-7UOj6nD1j-eBPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Complete" />
+                                  </uix:NClick.Target>
+                                  <uix:NClick.VerifyOptions>
+                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                      <uix:VerifyExecutionOptions.Retry>
+                                        <InArgument x:TypeArguments="x:Boolean" />
+                                      </uix:VerifyExecutionOptions.Retry>
+                                      <uix:VerifyExecutionOptions.Timeout>
+                                        <InArgument x:TypeArguments="x:Double" />
+                                      </uix:VerifyExecutionOptions.Timeout>
+                                    </uix:VerifyExecutionOptions>
+                                  </uix:NClick.VerifyOptions>
+                                </uix:NClick>
+                                <uix:NCheckState DisplayName="Check App State '8121848276-Noble Fox(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,432" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="3d3f0b35-83cd-448b-8150-e7578e8f971f" ContentHash="8hHO7pK-E02B7wummqJp7A" DesignTimeRectangle="151, 179, 1622, 55" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nz-modal-container&amp;gt;div&amp;gt;div&amp;gt;div' parentid='cdk-overlay-7' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='cdk-overlay-7' tag='DIV' class='ant-modal-header ng-tns-c134-855 ng-star-inserted' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9161962f-211e-4d88-b7cc-56869ba4eef4" InformativeScreenshot="9ba1618a5dcea7c9170585ddcb3b4f3b.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/8lQC56-CkU2qkv16BZSC9Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='8121848276-Noble Fox - Shipments - Plaid ERP' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+                                  </uix:NCheckState.Target>
+                                </uix:NCheckState>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,90" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                        </Sequence>
+                      </ActivityAction>
+                    </ui:ForEachRow.Body>
+                  </ui:ForEachRow>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" ContentHash="gO8e2ofCW0aY1tG9ijiHoA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAewAAAGhCAYAAACj7IfSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALiIAAC4iAari3ZIAACehSURBVHhe7d0PsH1rXddxUPIKgXJVuoBPiEgoUhM+lKCGGqRApDkh/dGR1GciGAppZBBrDExSmkoslOni/0as0ERQrwmMkCEjhYliJiP4B9DASInMv9htvte1vPt+znP2+e691/o+a5/v+zXzGWbOb+291nm+nPW5+9/ad7r11lvvRAghhJBt58IPCCGEELK9XPgBIYQQQraXCz8ghBBCyPZy4QeEEEII2V4u/IAQQggh28uFHxBCCCFke7nwA0IIIYRsLxd+QAghhJDt5cIPthYAAE6hvXKuufCDrQUAgFNor5xrLvxga9ldc0IIIeSAUNiRobAJIYQcGQo7MhQ2IYSQI0NhR4bCJoQQcmQo7MhQ2IQQQo4MhR2ZKwobAACj/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0PMMAAKSn/UBhR8czDABAetoPFHZ0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" sap2010:WorkflowViewState.IdRef="TargetApp_1" InformativeScreenshot="5122e0f0ab91e6025bb82566a13c2e8a.jpg" Reference="D5pikt_6Kk2kct3wAk-2VQ/HrkLnLQufUq9vmeWOuLBKg" Selector="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" Url="https://orders.mccapparel.com/manufacturing/shipments" Version="V2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

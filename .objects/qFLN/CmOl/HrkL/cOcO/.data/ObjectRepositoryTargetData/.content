@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="o8a6GNFAY0SAQeN9uIYzCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="7c2cfeb4-04ae-43bf-939f-69c3c2eb4ed0" CvTextArea="1583, 204, 37, 13" CvTextArgument="Active" CvType="Text" DesignTimeRectangle="1551, 195, 303, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' /&gt;" Guid="314eb998-b633-4777-a838-640cea3ae099" ScopeSelectorArgument="&lt;html app='chrome.exe' title='5411082902-Black Lapel - Shipments - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7c2cfeb4-04ae-43bf-939f-69c3c2eb4ed0" CvTextArea="1583, 204, 37, 13" CvTextArgument="Active" CvType="Text" DesignTimeRectangle="1500, 195, 400, 32" ElementType="InputBox" FullSelectorArgument="&lt;webctrl class='table-search' tag='DIV' /&gt;" Guid="1828d7fc-2d4e-49f9-8c68-f13c71d1283f" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1ece7857a0b1d09ed1130d1a9926ad93.png" xmlns="">0C-AxNcHklky5NPaJGRuohg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

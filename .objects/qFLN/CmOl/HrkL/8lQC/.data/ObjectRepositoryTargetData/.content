@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="8hHO7pK-E02B7wummqJp7A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="3d3f0b35-83cd-448b-8150-e7578e8f971f" DesignTimeRectangle="151, 179, 1622, 55" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;nz-modal-container&amp;gt;div&amp;gt;div&amp;gt;div' parentid='cdk-overlay-7' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='cdk-overlay-7' tag='DIV' class='ant-modal-header ng-tns-c134-855 ng-star-inserted' aaname='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9161962f-211e-4d88-b7cc-56869ba4eef4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='8121848276-Noble Fox - Shipments - Plaid ERP' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9ba1618a5dcea7c9170585ddcb3b4f3b.png" xmlns="">0SuKzq1dXpkWuM2njPoiKOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

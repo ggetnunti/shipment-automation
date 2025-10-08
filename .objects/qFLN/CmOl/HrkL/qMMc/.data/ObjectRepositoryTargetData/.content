@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="k68JWwI630WeZbYYOHNkKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="e281c841-a5e9-4d8a-80cf-5273b65f117a" CvTextArea="1562, 308, 76, 13" CvTextArgument="Carrier: DHL" CvType="Text" DesignTimeRectangle="1563, 304, 299, 22" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='ant-select-item-option-content' idx='3' parentid='cdk-overlay-0' tag='DIV' /&gt;" Guid="384a4b73-7a13-4d39-9019-192caf284c42" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e281c841-a5e9-4d8a-80cf-5273b65f117a" CvTextArea="1562, 276, 95, 16" CvTextArgument="Ship Date: DHL" CvType="Text" DesignTimeRectangle="1563, 272, 299, 22" FuzzySelectorArgument="&lt;webctrl class='ant-select-item-option-content' type='' parentid='cdk-overlay-0' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Ship Date: DHL' /&gt;" Guid="65423959-bfce-48fc-9d36-1141c153c6ee" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="830218cac7ad73a512953c6f7dccac91.png" xmlns="">0XiYTc3kd6UWSr4EzHny2zw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
