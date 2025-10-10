@@ -1,0 +1,13 @@
+﻿{
+  "Name": "folder path",
+  "Type": "Element",
+  "Id": "GWA-1GbEhEGwQmeY03W7ug",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/GWA-1GbEhEGwQmeY03W7ug",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/qSAXCdqfJ0SSzPwe4u_qdg",
+  "Created": "2025-10-08T15:09:34.0817334Z",
+  "Updated": "2025-10-08T15:09:34.0817334Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

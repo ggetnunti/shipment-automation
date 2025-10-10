@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4nnug4JO4k-GuDp62I5nFQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="7e807fba-f4db-4aa7-984b-a048f082204d" DesignTimeRectangle="225, 389, 1474, 57" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='*-label.pdf' parentid='cdk-overlay-2' tag='DIV' /&gt;" Guid="772d9bdf-cf7c-4ebc-a697-715d162b4d9e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='4693718094-Bespoke Spokane - Shipments - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="62ed5be85d2203a19aeb7aac44a437ed.png" xmlns="">05CQkA8pWV0iVlDQGdkpNTg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

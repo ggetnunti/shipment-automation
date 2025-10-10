@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Scroll to Label",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9dSO-bQwsU6dkPaySCZWiw",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/9dSO-bQwsU6dkPaySCZWiw",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/e83pZM04DUCO2d9cyfrItw",
+  "Created": "2025-10-09T06:54:46.4709326Z",
+  "Updated": "2025-10-09T06:54:46.4709326Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

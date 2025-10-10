@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uFJV4x50L06_FgDRc0SBlA" Reference="D5pikt_6Kk2kct3wAk-2VQ/lJV3C2kAu02QSiOtwgqcaw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="e18bd97e-107a-4e7f-80d2-fd613f17ecd9" CvTextArea="223, 586, 178, 18" CvTextArgument="[If(row(&quot;Carrier&quot;).ToString = &quot;FedEx&quot;, trackingNumber + &quot;-COMMERCIAL_INVOICE.pdf&quot;, trackingNumber + &quot;-invoice.pdf&quot;)]" CvType="Text" DesignTimeRectangle="223, 586, 178, 18" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="df8bfd0a-897c-4fed-bca0-21d66c189369" ScopeSelectorArgument="&lt;html app='chrome.exe' title='4693718094-Bespoke Spokane - Shipments - Plaid ERP' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8ffb98380b4e02b23cd92acbfb7ed72d.png" xmlns="">08VMCdHYdcEinrReYtI_ISg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GMkdWBEsQEaE1rYiGQKuOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="a850dd87-06ae-488a-807e-ef92d4d99ce8" CvType="AnyWordGroup" DesignTimeRectangle="225, 556, 1474, 57" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='cdk-overlay-6' tag='DIV' type='' class='ant-card-head-title ng-star-inserted' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="4031da59-92c8-40b6-b3e6-5fef60b25c92" ScopeSelectorArgument="&lt;html app='chrome.exe' title='5020312220-Tweeds Suit Shop - Shipments - Plaid ERP' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="225, 637, 1474, 893" FullSelectorArgument="&lt;webctrl id='ifrm-1' tag='IFRAME' /&gt;" Guid="c198e2f0-8f52-4274-a64f-462dca1da89d" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6fd51e4599a4333892e445f323c358ed.png" xmlns="">0eazlV-7f_k24vOfCFe1Hag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

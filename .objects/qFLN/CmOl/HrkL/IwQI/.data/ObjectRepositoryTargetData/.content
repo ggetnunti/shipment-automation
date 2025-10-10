@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gd7eudHpPkmaExvXTy_cyg" Reference="D5pikt_6Kk2kct3wAk-2VQ/IwQI783qfk6cxCDmZmNTJw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="11b8059a-0e1e-4472-8883-71f1aaa630ca" CvElementArea="1582, 733, 21, 21" CvType="Icon" DesignTimeRectangle="1580, 675, 25, 25" ElementType="Icon" ElementVisibilityArgument="Interactive" Guid="ba394179-3d12-4478-b8a7-f545981c47d7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACUSURBVEhL7dLRCcAgDEVRB3M4t3AKt3AKt3ACyxMCEiVNoIIUPw6W0PbSqvPet90cH+xwIyZnRnLOHZ9LbmSaS86JpJRajLFfjxGsNJeoInhRrbWvFAHMQgjT/ZwqAhQaaQKgjsAY0gbAFAGELAEQI7QPfM7RF/I5eY3QCZLQIeDPqyKrzV4ppYi/UIx85UZM/hN5AF1Xidbjs5fJAAAAAElFTkSuQmCC" ScopeSelectorArgument="&lt;html app='chrome.exe' title='9692552936-Rye 51 - Shipments - Plaid ERP' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="11b8059a-0e1e-4472-8883-71f1aaa630ca" DesignTimeRectangle="225, 577, 1474, 57" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='*-label.pdf' parentid='cdk-overlay-7' tag='DIV' type='' class='ant-card-head-title ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:text='*-label.pdf' /&gt;" Guid="9f6d8792-263f-4f50-8e6c-b7177c3fb94a" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a4d47053df8413739efca83a81d3806f.png" xmlns="">0ZvuyXlgIsEyxvf3NivThAw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
