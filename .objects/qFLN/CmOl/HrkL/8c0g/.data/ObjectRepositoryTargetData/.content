@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="a7QDOZD2tESSJoUZnIS8Nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="A2g9nvqicUiJldBZRG09uw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" CvTextArea="1562, 276, 64, 16" CvTextArgument="Ship Date:" CvType="Text" DesignTimeRectangle="1563, 273, 60, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ship Date' parentid='cdk-overlay-0' tag='SPAN' /&gt;" Guid="c8e98550-9ada-4d87-bbe0-6c11e93ffa91" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <TargetAnchorable.Anchors>
-        <scg:List x:TypeArguments="ITarget" Capacity="4">
-          <Target CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" CvTextArea="1562, 308, 45, 13" CvTextArgument="Carrier:" CvType="Text" DesignTimeRectangle="1563, 305, 41, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Carrier' parentid='cdk-overlay-0' tag='SPAN' type='' class='ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Carrier' /&gt;" Guid="70443ef9-92df-4aa8-a329-55a1bbf078e7" SearchSteps="FuzzySelector, CV" />
-        </scg:List>
-      </TargetAnchorable.Anchors>
-      <imageRef attrName="InformativeScreenshot" originalValue="d3b5444ff29ade57669bf498ef5d6a18.png" xmlns="">0R9liN5A7hEa6Xt9mLtPpLA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="431e0523-8442-42c7-8f03-1f61b7a64e42" CvTextArea="1562, 276, 64, 16" CvTextArgument="Ship Date:" CvType="Text" DesignTimeRectangle="1563, 273, 60, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ship Date' parentid='cdk-overlay-0' tag='SPAN' /&gt;" Guid="cdd353f7-7b17-471c-b9d6-94e1255bc1e8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="6ee66578abc5423ab1be76b1f6d86378.png" xmlns="">0nocd1hVdT0i4pRJX6aznuA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

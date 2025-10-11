@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="gZraQDKo80etadycjmzJ1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/orders" CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" CvTextArea="55, 713, 66, 16" CvTextArgument="Shipments" CvType="Text" DesignTimeRectangle="56, 710, 65, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shipments' tag='A' /&gt;" Guid="2310b805-3cba-4e41-adf7-3e67af7df8d8" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" CvElementArea="28, 709, 21, 21" CvType="Icon" DesignTimeRectangle="26, 707, 25, 25" ElementType="Icon" Guid="08a4ef9a-a442-41d6-9735-686775c885ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZLhCcQgDEY7jXs4iHs4h3t0EPdwD49PCNiQz8aDK/ejDwISaV4Se/QHOHTiF7ySLf5H0loboam1mnnNraSU0kMIPcY4zgIEVt6CStBhSmkUmgMFRTwHZGwqKmGFZEWsAQsqAWxVAKK5kfM8L/czSwnAx2wNAJPpBjRLyWoSz71AJdbOpRi6x1nfMxGV6J1L5JxH6DyaYlCJgDeRrvV65vOKWwlA53oqFJf86scALgkKWW/gmQK4JEC/kae44JYIkOHv2mFb8g2vZItHJB8XCdy7BGndMAAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8c51d2ffdce11baebe5ef0b0944acb89.png" xmlns="">0-anmdGm4tEuTa1g0H5dcAA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

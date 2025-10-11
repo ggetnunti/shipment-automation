@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="CWCQ722Bj0GhJm54C7-mKw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" DesignTimeRectangle="225, 300, 1674, 724" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;nz-card&amp;gt;div&amp;gt;div&amp;gt;nz-table&amp;gt;nz-spin&amp;gt;div&amp;gt;div&amp;gt;nz-table-inner-scroll&amp;gt;div' idx='2' tag='DIV' /&gt;" Guid="a6227fa6-fe8e-436d-9f72-0b8ef9e7ce73" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="ad0a5b3e7f90cf4f3cd08f5c64fa297a.png" xmlns="">0zx8SEPRqaE-zcl00RC0wWA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScroll</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

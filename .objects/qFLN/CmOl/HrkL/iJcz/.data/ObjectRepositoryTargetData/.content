@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-reyEr32FkKYZ2FmsOsHIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="fff8faea-3e80-4af9-9228-6db4ca66f538" CvElementArea="37, 1005, 21, 23" CvType="ArrowButton" DesignTimeRectangle="45, 1010, 7, 12" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-sider&amp;gt;div&amp;gt;span&amp;gt;svg&amp;gt;path' tag='path' /&gt;" Guid="0567fe54-3d95-4cb8-a700-1693a85cbf37" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="9f28365c6fb17b8eeffc89dd52d9fb68.png" xmlns="">0iQmb-xA1YEue-YVEywTiTw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

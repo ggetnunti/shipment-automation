@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Mouse Scroll 'MO95058-04S-391c 772…'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "7_mB0NRoGU2K8uzNwVV8ow",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/7_mB0NRoGU2K8uzNwVV8ow",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/HrkLnLQufUq9vmeWOuLBKg",
+  "Created": "2025-10-10T06:40:48.5094553Z",
+  "Updated": "2025-10-10T06:40:48.5094553Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

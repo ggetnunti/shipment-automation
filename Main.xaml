@@ -47,6 +47,7 @@
       <x:String>UiPath.DataTableUtilities</x:String>
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Numerics</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -113,9 +114,10 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
       <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="883,9572" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="883,13862" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
       <Variable x:TypeArguments="s:DateTime" Name="shipDate" />
@@ -187,20 +189,175 @@
         </If.Else>
       </If>
     </Sequence>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Shipments - Manufacturing - Plaid ERP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="694,8391" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Shipments - Manufacturing - Plaid ERP" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="694,12681" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="660,8150" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="660,12440" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uix:NCheckState DisplayName="Check App State 'MCC Apparel Login'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="626,2145" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="522,1855" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,227" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="orders.mccapparel.com" CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" ContentHash="7YeLomOPS0W9wudJsB4G4Q" CvElementArea="866, 639, 205, 35" CvTextArea="948, 650, 40, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="949, 646, 38, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' tag='SPAN' type='' aaname='Log in' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log in' /&gt;" Guid="d21fb2c7-419e-4047-b01e-655b22b19bbc" InformativeScreenshot="8f3a9e58c80ef6f27f5c0f97be2c4843.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/MOj1hsX54kSU61bHMjxRfQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Plaid ERP' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" CvElementArea="866, 639, 205, 35" CvTextArea="948, 650, 40, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="868, 641, 201, 32" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='BUTTON' type='' class='ant-btn login-form-button ant-btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log in' /&gt;" Guid="fe6b1a00-1b4d-4859-aee7-3fa12bc70aec" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <uix:NClick.VerifyOptions>
+                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                        <uix:VerifyExecutionOptions.Retry>
+                          <InArgument x:TypeArguments="x:Boolean" />
+                        </uix:VerifyExecutionOptions.Retry>
+                        <uix:VerifyExecutionOptions.Timeout>
+                          <InArgument x:TypeArguments="x:Double" />
+                        </uix:VerifyExecutionOptions.Timeout>
+                      </uix:VerifyExecutionOptions>
+                    </uix:NClick.VerifyOptions>
+                  </uix:NClick>
+                  <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                  <uix:NCheckState DisplayName="Check App State 'svg'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,1445" sap2010:WorkflowViewState.IdRef="NCheckState_5" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                    <uix:NCheckState.IfExists>
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,505" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'path'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="fff8faea-3e80-4af9-9228-6db4ca66f538" ContentHash="-reyEr32FkKYZ2FmsOsHIQ" CvElementArea="37, 1005, 21, 23" CvType="ArrowButton" DesignTimeRectangle="45, 1010, 7, 12" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-sider&amp;gt;div&amp;gt;span&amp;gt;svg&amp;gt;path' tag='path' /&gt;" Guid="0567fe54-3d95-4cb8-a700-1693a85cbf37" InformativeScreenshot="9f28365c6fb17b8eeffc89dd52d9fb68.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/iJczynDSY0y9xf-pAHrgMw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shipments'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                          <uix:NClick.Target>
+                            <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/orders" CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" ContentHash="gZraQDKo80etadycjmzJ1g" CvTextArea="55, 713, 66, 16" CvTextArgument="Shipments" CvType="Text" DesignTimeRectangle="56, 710, 65, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shipments' tag='A' /&gt;" Guid="2310b805-3cba-4e41-adf7-3e67af7df8d8" InformativeScreenshot="8c51d2ffdce11baebe5ef0b0944acb89.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/P0xbrSnDWU2_MPQ1Xb0Iug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" CvElementArea="28, 709, 21, 21" CvType="Icon" DesignTimeRectangle="26, 707, 25, 25" ElementType="Icon" Guid="08a4ef9a-a442-41d6-9735-686775c885ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZLhCcQgDEY7jXs4iHs4h3t0EPdwD49PCNiQz8aDK/ejDwISaV4Se/QHOHTiF7ySLf5H0loboam1mnnNraSU0kMIPcY4zgIEVt6CStBhSmkUmgMFRTwHZGwqKmGFZEWsAQsqAWxVAKK5kfM8L/czSwnAx2wNAJPpBjRLyWoSz71AJdbOpRi6x1nfMxGV6J1L5JxH6DyaYlCJgDeRrvV65vOKWwlA53oqFJf86scALgkKWW/gmQK4JEC/kae44JYIkOHv2mFb8g2vZItHJB8XCdy7BGndMAAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NClick.Target>
+                          <uix:NClick.VerifyOptions>
+                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                              <uix:VerifyExecutionOptions.Retry>
+                                <InArgument x:TypeArguments="x:Boolean" />
+                              </uix:VerifyExecutionOptions.Retry>
+                              <uix:VerifyExecutionOptions.Timeout>
+                                <InArgument x:TypeArguments="x:Double" />
+                              </uix:VerifyExecutionOptions.Timeout>
+                            </uix:VerifyExecutionOptions>
+                          </uix:NClick.VerifyOptions>
+                        </uix:NClick>
+                      </Sequence>
+                    </uix:NCheckState.IfExists>
+                    <uix:NCheckState.IfNotExists>
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,684" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NCheckState DisplayName="Check App State 'Shipments'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,624" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                          <uix:NCheckState.IfExists>
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Shipments'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/orders" CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" ContentHash="gZraQDKo80etadycjmzJ1g" CvTextArea="55, 713, 66, 16" CvTextArgument="Shipments" CvType="Text" DesignTimeRectangle="56, 710, 65, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shipments' tag='A' /&gt;" Guid="2310b805-3cba-4e41-adf7-3e67af7df8d8" InformativeScreenshot="8c51d2ffdce11baebe5ef0b0944acb89.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/P0xbrSnDWU2_MPQ1Xb0Iug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" CvElementArea="28, 709, 21, 21" CvType="Icon" DesignTimeRectangle="26, 707, 25, 25" ElementType="Icon" Guid="08a4ef9a-a442-41d6-9735-686775c885ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZLhCcQgDEY7jXs4iHs4h3t0EPdwD49PCNiQz8aDK/ejDwISaV4Se/QHOHTiF7ySLf5H0loboam1mnnNraSU0kMIPcY4zgIEVt6CStBhSmkUmgMFRTwHZGwqKmGFZEWsAQsqAWxVAKK5kfM8L/czSwnAx2wNAJPpBjRLyWoSz71AJdbOpRi6x1nfMxGV6J1L5JxH6DyaYlCJgDeRrvV65vOKWwlA53oqFJf86scALgkKWW/gmQK4JEC/kae44JYIkOHv2mFb8g2vZItHJB8XCdy7BGndMAAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <uix:NClick.VerifyOptions>
+                                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                    <uix:VerifyExecutionOptions.Retry>
+                                      <InArgument x:TypeArguments="x:Boolean" />
+                                    </uix:VerifyExecutionOptions.Retry>
+                                    <uix:VerifyExecutionOptions.Timeout>
+                                      <InArgument x:TypeArguments="x:Double" />
+                                    </uix:VerifyExecutionOptions.Timeout>
+                                  </uix:VerifyExecutionOptions>
+                                </uix:NClick.VerifyOptions>
+                              </uix:NClick>
+                            </Sequence>
+                          </uix:NCheckState.IfExists>
+                          <uix:NCheckState.IfNotExists>
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </uix:NCheckState.IfNotExists>
+                          <uix:NCheckState.Target>
+                            <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/orders" CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" ContentHash="gZraQDKo80etadycjmzJ1g" CvTextArea="55, 713, 66, 16" CvTextArgument="Shipments" CvType="Text" DesignTimeRectangle="56, 710, 65, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Shipments' tag='A' /&gt;" Guid="2310b805-3cba-4e41-adf7-3e67af7df8d8" InformativeScreenshot="8c51d2ffdce11baebe5ef0b0944acb89.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/P0xbrSnDWU2_MPQ1Xb0Iug" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="27023a0b-5c92-4b33-bf6b-3d828c1e20b9" CvElementArea="28, 709, 21, 21" CvType="Icon" DesignTimeRectangle="26, 707, 25, 25" ElementType="Icon" Guid="08a4ef9a-a442-41d6-9735-686775c885ec" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZLhCcQgDEY7jXs4iHs4h3t0EPdwD49PCNiQz8aDK/ejDwISaV4Se/QHOHTiF7ySLf5H0loboam1mnnNraSU0kMIPcY4zgIEVt6CStBhSmkUmgMFRTwHZGwqKmGFZEWsAQsqAWxVAKK5kfM8L/czSwnAx2wNAJPpBjRLyWoSz71AJdbOpRi6x1nfMxGV6J1L5JxH6DyaYlCJgDeRrvV65vOKWwlA53oqFJf86scALgkKWW/gmQK4JEC/kae44JYIkOHv2mFb8g2vZItHJB8XCdy7BGndMAAAAABJRU5ErkJggg==" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NCheckState.Target>
+                        </uix:NCheckState>
+                      </Sequence>
+                    </uix:NCheckState.IfNotExists>
+                    <uix:NCheckState.Target>
+                      <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="8a25b38b-75b4-4302-a0ca-c5fdb34cf8b0" ContentHash="bZyEgc499kCgNjyND-G7wg" CvElementArea="37, 1005, 21, 23" CvType="ArrowButton" DesignTimeRectangle="41, 1009, 14, 14" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-sider&amp;gt;div&amp;gt;span&amp;gt;svg' tag='svg' /&gt;" Guid="8338423e-883e-483f-a4e5-d9c8545a1e13" InformativeScreenshot="c20c049edd3fda6d2e45934bf11918cc.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/l1UVpfl6MkOpfiTuT9rJqw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:NCheckState.Target>
+                  </uix:NCheckState>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="522,25" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com" CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" ContentHash="P3HiDPKJxEemsU339dRJzw" CvTextArea="897, 425, 141, 19" CvTextArgument="MCC Apparel Login" CvType="Text" DesignTimeRectangle="868, 404, 201, 57" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='MCC Apparel Login' tag='DIV' /&gt;" Guid="0caeeb74-76e1-4026-912b-c5fbf5e0a3d4" InformativeScreenshot="8b220f07d99a9dbf05ecf0dbca89d9c4.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/rUR9mG_TWkSbHSqKcYGJNw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
             <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="626,123" sap2010:WorkflowViewState.IdRef="Delay_1" />
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type 'Date' Into 'Search'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="626,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Text="[shipDate.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V5">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type 'Date' Into 'Search'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="626,288" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Text="[shipDate.ToString(&quot;yyyy-MM-dd&quot;)]" Version="V5">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="e4576535-c3fc-4e13-9b53-5373d36c6a44" ContentHash="uHpvNqne8E6tt2dr_UwSGQ" CvTextArea="1583, 204, 37, 13" CvTextArgument="Active" CvType="Text" DesignTimeRectangle="1551, 195, 323, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='NZ-SELECT-TOP-CONTROL' /&gt;" Guid="244c1e59-befa-426a-8b2a-a83abe24f1f6" InformativeScreenshot="d6618ea2b6ea3f108e5945bf6854dfdf.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/JhHVFRPQ3kG2YpB2ppu4tA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -223,13 +380,7 @@
             </uix:NTypeInto>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Ship Date'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="626,227" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
               <uix:NClick.Target>
-                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" ContentHash="a7QDOZD2tESSJoUZnIS8Nw" CvTextArea="1562, 276, 64, 16" CvTextArgument="Ship Date:" CvType="Text" DesignTimeRectangle="1563, 273, 60, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ship Date' parentid='cdk-overlay-0' tag='SPAN' /&gt;" Guid="c8e98550-9ada-4d87-bbe0-6c11e93ffa91" InformativeScreenshot="d3b5444ff29ade57669bf498ef5d6a18.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/8c0gCLUwCUyw60YK9kK6fA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="c4ef645f-0619-4da2-913a-56867735acb7" CvTextArea="1562, 308, 45, 13" CvTextArgument="Carrier:" CvType="Text" DesignTimeRectangle="1563, 305, 41, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Carrier' parentid='cdk-overlay-0' tag='SPAN' type='' class='ng-star-inserted' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Carrier' /&gt;" Guid="70443ef9-92df-4aa8-a329-55a1bbf078e7" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="431e0523-8442-42c7-8f03-1f61b7a64e42" ContentHash="A2g9nvqicUiJldBZRG09uw" CvTextArea="1562, 276, 64, 16" CvTextArgument="Ship Date:" CvType="Text" DesignTimeRectangle="1563, 273, 60, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Ship Date' parentid='cdk-overlay-0' tag='SPAN' /&gt;" Guid="cdd353f7-7b17-471c-b9d6-94e1255bc1e8" InformativeScreenshot="6ee66578abc5423ab1be76b1f6d86378.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/8c0gCLUwCUyw60YK9kK6fA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NClick.Target>
               <uix:NClick.VerifyOptions>
                 <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -299,22 +450,26 @@
                 <uix:TargetAnchorable BrowserURL="https://orders.mccapparel.com/manufacturing/shipments" ContentHash="XiSj6dq9MkWLnNYh80reWw" DesignTimeRectangle="225, 352, 1674, 1404" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='TABLE' /&gt;" Guid="f19d5e4a-50e7-4508-acaf-35aaf310d773" InformativeScreenshot="59cc85c285d10b1b5d4df64d6dcf17a5.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/ISWXBUJpjUe-kMLBHZxvhw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
               </uix:NExtractData.Target>
             </uix:NExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="626,6806" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Label" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="626,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Invoice" DataTable="[ExtractDataTable]" DisplayName="Add Data Column" sap:VirtualizedContainerService.HintSize="626,221" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+            <ui:WriteRange WorkbookPathResource="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="626,148" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[shipDate.ToString(&quot;d-M-yy&quot;)]" StartingCell="A1" WorkbookPath="[Path.Combine(newFolderPath, &quot;Shipments.xlsx&quot;)]" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[ExtractDataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="626,8361" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="624,6631" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="624,8186" sap2010:WorkflowViewState.IdRef="Sequence_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[row(&quot;Ship Date&quot;).ToString.Trim.Contains(shipDate.ToString(&quot;M/d/yy&quot;))]" sap:VirtualizedContainerService.HintSize="590,6571" sap2010:WorkflowViewState.IdRef="If_2">
+                    <If Condition="[row(&quot;Ship Date&quot;).ToString.Trim.Contains(shipDate.ToString(&quot;M/d/yy&quot;))]" sap:VirtualizedContainerService.HintSize="590,8126" sap2010:WorkflowViewState.IdRef="If_2">
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="588,6351" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="588,7906" sap2010:WorkflowViewState.IdRef="Sequence_9">
                           <Sequence.Variables>
+                            <Variable x:TypeArguments="x:String" Name="currentCarrier" />
                             <Variable x:TypeArguments="x:String" Name="currentShipment" />
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
@@ -330,6 +485,14 @@
                               <InArgument x:TypeArguments="x:String">[row("Shipment").ToString.Trim]</InArgument>
                             </Assign.Value>
                           </Assign>
+                          <Assign sap:VirtualizedContainerService.HintSize="554,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign.To>
+                              <OutArgument x:TypeArguments="x:String">[currentCarrier]</OutArgument>
+                            </Assign.To>
+                            <Assign.Value>
+                              <InArgument x:TypeArguments="x:String">[row("Carrier").ToString.Trim]</InArgument>
+                            </Assign.Value>
+                          </Assign>
                           <Assign sap:VirtualizedContainerService.HintSize="554,175" sap2010:WorkflowViewState.IdRef="Assign_4">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[trackingNumber]</OutArgument>
@@ -338,7 +501,29 @@
                               <InArgument x:TypeArguments="x:String">[currentShipment.Split("-"c)(0).Trim]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <If Condition="[Not Directory.Exists(Path.Combine(newFolderPath, trackingNumber))]" sap:VirtualizedContainerService.HintSize="554,403" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If Condition="[Not Directory.Exists(Path.Combine(newFolderPath, currentCarrier))]" sap:VirtualizedContainerService.HintSize="554,338" sap2010:WorkflowViewState.IdRef="If_5">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_4" Path="[Path.Combine(newFolderPath, currentCarrier)]" />
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <If Condition="[Not Directory.Exists(Path.Combine(newFolderPath, currentCarrier, trackingNumber))]" sap:VirtualizedContainerService.HintSize="554,338" sap2010:WorkflowViewState.IdRef="If_3">
                             <If.Then>
                               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_16">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -346,28 +531,70 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Path.Combine(newFolderPath, trackingNumber)]" />
+                                <ui:CreateDirectory ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create Folder" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="CreateDirectory_3" Path="[Path.Combine(newFolderPath, currentCarrier, trackingNumber)]" />
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
                               </Sequence>
                             </If.Else>
                           </If>
-                          <If Condition="[row(&quot;Shipment&quot;) IsNot Nothing AndAlso Not IsDBNull(row(&quot;Shipment&quot;)) AndAlso row(&quot;Shipment&quot;).ToString.Trim &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="554,648" sap2010:WorkflowViewState.IdRef="If_4">
+                          <If Condition="[row(&quot;Shipment&quot;) IsNot Nothing AndAlso Not IsDBNull(row(&quot;Shipment&quot;)) AndAlso row(&quot;Shipment&quot;).ToString.Trim &lt;&gt; &quot;&quot;]" sap:VirtualizedContainerService.HintSize="554,1377" sap2010:WorkflowViewState.IdRef="If_4">
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,401" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,1130" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on current Shipment" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,227" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Timeout="8000" Version="V5">
+                                <uix:NCheckState DisplayName="Check Current Shipment" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,729" sap2010:WorkflowViewState.IdRef="NCheckState_4" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,374" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll to Current Shipment" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,314" sap2010:WorkflowViewState.IdRef="NMouseScroll_7" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Version="V5">
+                                        <uix:NMouseScroll.SearchedElement>
+                                          <uix:SearchedElement>
+                                            <uix:SearchedElement.OutUiElement>
+                                              <OutArgument x:TypeArguments="ui:UiElement" />
+                                            </uix:SearchedElement.OutUiElement>
+                                            <uix:SearchedElement.Target>
+                                              <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="553d567c-9a2f-4f5a-afb8-a5a9e47a8cf9" ContentHash="R76IpwH1BUm3VAYp409uvQ" CvTextArea="277, 364, 193, 16" CvTextArgument="[row(&quot;Shipment&quot;).ToString]" CvType="Text" DesignTimeRectangle="277, 364, 193, 16" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="0f2f3120-dd8c-4dfb-82b1-b9eda45ff7cf" InformativeScreenshot="9306c9251888004ae771b78b540b0780.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/uTTTCCR-7UOj6nD1j-eBPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='884900851399-Blu Fine Menswear - Shipments - Plaid ERP' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                            </uix:SearchedElement.Target>
+                                            <uix:SearchedElement.Timeout>
+                                              <InArgument x:TypeArguments="x:Double" />
+                                            </uix:SearchedElement.Timeout>
+                                          </uix:SearchedElement>
+                                        </uix:NMouseScroll.SearchedElement>
+                                        <uix:NMouseScroll.Target>
+                                          <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" ContentHash="CWCQ722Bj0GhJm54C7-mKw" DesignTimeRectangle="225, 300, 1674, 724" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-content-container&amp;gt;app-content&amp;gt;nz-layout&amp;gt;nz-layout&amp;gt;nz-content&amp;gt;app-shipments&amp;gt;app-table&amp;gt;nz-card&amp;gt;div&amp;gt;div&amp;gt;nz-table&amp;gt;nz-spin&amp;gt;div&amp;gt;div&amp;gt;nz-table-inner-scroll&amp;gt;div' idx='2' tag='DIV' /&gt;" Guid="a6227fa6-fe8e-436d-9f72-0b8ef9e7ce73" InformativeScreenshot="ad0a5b3e7f90cf4f3cd08f5c64fa297a.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/h-LNpJWBNk-tmakjHCKDyQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                                        </uix:NMouseScroll.Target>
+                                      </uix:NMouseScroll>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="553d567c-9a2f-4f5a-afb8-a5a9e47a8cf9" ContentHash="R76IpwH1BUm3VAYp409uvQ" CvTextArea="277, 364, 193, 16" CvTextArgument="[row(&quot;Shipment&quot;).ToString]" CvType="Text" DesignTimeRectangle="277, 364, 193, 16" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="0f2f3120-dd8c-4dfb-82b1-b9eda45ff7cf" InformativeScreenshot="9306c9251888004ae771b78b540b0780.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/uTTTCCR-7UOj6nD1j-eBPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='884900851399-Blu Fine Menswear - Shipments - Plaid ERP' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  </uix:NCheckState.Target>
+                                </uix:NCheckState>
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on current Shipment" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,227" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="43ecc036-87a9-4def-88f2-7ab685ed61cf" Timeout="8000" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="553d567c-9a2f-4f5a-afb8-a5a9e47a8cf9" ContentHash="R76IpwH1BUm3VAYp409uvQ" CvTextArea="277, 364, 193, 16" CvTextArgument="[row(&quot;Shipment&quot;).ToString]" CvType="Text" DesignTimeRectangle="277, 364, 193, 16" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="0f2f3120-dd8c-4dfb-82b1-b9eda45ff7cf" InformativeScreenshot="9306c9251888004ae771b78b540b0780.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/uTTTCCR-7UOj6nD1j-eBPg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='884900851399-Blu Fine Menswear - Shipments - Plaid ERP' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive" />
                                   </uix:NClick.Target>
@@ -382,17 +609,17 @@
                                     </uix:VerifyExecutionOptions>
                                   </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                                <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="452,114" sap2010:WorkflowViewState.IdRef="Delay_2" />
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,108" sap2010:WorkflowViewState.IdRef="Sequence_23">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                                <ui:Continue sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="Continue_1" />
                               </Sequence>
                             </If.Else>
                           </If>
@@ -438,18 +665,30 @@
                               </uix:VerifyExecutionOptions>
                             </uix:NClick.VerifyOptions>
                           </uix:NClick>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save As" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,1928" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save As" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,1949" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1627" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1608" sap2010:WorkflowViewState.IdRef="Sequence_26">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,296" sap2010:WorkflowViewState.IdRef="NTypeInto_9" Text="[trackingNumber + &quot;-label&quot;]" Version="V5">
+                                    <uix:NTypeInto.VerifyOptions>
+                                      <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                        <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                          <InArgument x:TypeArguments="x:Boolean" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                        <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                          <InArgument x:TypeArguments="x:Double" />
+                                        </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                      </uix:VerifyExecutionTypeIntoOptions>
+                                    </uix:NTypeInto.VerifyOptions>
+                                  </uix:NTypeInto>
                                   <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Focus on address bar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" InteractionMode="HardwareEvents" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)]" Version="V5">
                                     <uix:NKeyboardShortcuts.VerifyOptions>
                                       <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
@@ -462,7 +701,7 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NKeyboardShortcuts.VerifyOptions>
                                   </uix:NKeyboardShortcuts>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,296" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="[Path.Combine(newFolderPath, trackingNumber) &amp; &quot;[k(enter)]&quot;]" Version="V5">
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,296" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Text="[Path.Combine(newFolderPath, currentCarrier, trackingNumber) &amp; &quot;[k(enter)]&quot;]" Version="V5">
                                     <uix:NTypeInto.VerifyOptions>
                                       <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                                         <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -474,53 +713,7 @@
                                       </uix:VerifyExecutionTypeIntoOptions>
                                     </uix:NTypeInto.VerifyOptions>
                                   </uix:NTypeInto>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,413" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                                    <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,302" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into 'Address: Downloads'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="HardwareEvents" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Text="[Path.Combine(newFolderPath, trackingNumber) &amp; &quot;[k(enter)]&quot;]" Version="V5">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable CVScreenId="c5a5b1a7-2149-475d-b1f8-950e687c4762" ContentHash="auL6d8U8EEKOQGQ12FHZJA" DesignTimeRectangle="152, 41, 505, 34" ElementType="Toolbar" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Loading' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Address: Downloads' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Loading' cls='msctls_progress32' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' title='Address: Downloads' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;" Guid="3ae99acb-f4d0-4067-a503-4c751ed3397a" InformativeScreenshot="243b718777ecf4f1773671a7ccd2d6b0.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/IYEL5k12kEms1b-MCIAj3w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                                              <uix:TargetAnchorable.PointOffset>
-                                                <uix:PointOffset Position="BottomRight" X="-23" Y="-17" />
-                                              </uix:TargetAnchorable.PointOffset>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
-                                        </uix:NTypeInto>
-                                      </Sequence>
-                                    </ui:CommentOut.Body>
-                                  </ui:CommentOut>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,389" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-                                    <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,278" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No items match your sea…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V5">
-                                          <uix:NClick.Target>
-                                            <uix:TargetAnchorable CVScreenId="732278d3-6909-411b-a836-082deed40c19" DesignTimeRectangle="168, 148, 784, 33" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1121' title='ShellView' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;&lt;wnd aaname='Items View' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Items View' role='list' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl automationid='EmptyTextFocusable' role='text' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="15d5a19d-7b23-49b4-90e5-71f1d33e0d3a" InformativeScreenshot="b758dc5c083c1ba55d54b9d1f03e0b12.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
-                                          </uix:NClick.Target>
-                                          <uix:NClick.VerifyOptions>
-                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                              <uix:VerifyExecutionOptions.Retry>
-                                                <InArgument x:TypeArguments="x:Boolean" />
-                                              </uix:VerifyExecutionOptions.Retry>
-                                              <uix:VerifyExecutionOptions.Timeout>
-                                                <InArgument x:TypeArguments="x:Double" />
-                                              </uix:VerifyExecutionOptions.Timeout>
-                                            </uix:VerifyExecutionOptions>
-                                          </uix:NClick.VerifyOptions>
-                                        </uix:NClick>
-                                      </Sequence>
-                                    </ui:CommentOut.Body>
-                                  </ui:CommentOut>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,220" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,227" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable CVScreenId="fee264cd-0e67-44fc-b1e6-5f788bb1dab7" CvElementArea="747, 489, 88, 26" CvTextArea="778, 495, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="ffee9450-ef5a-4762-ab89-43449e1b8e96" InformativeScreenshot="6a17286a8e2f294d00055aa763e54c8a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
@@ -541,6 +734,26 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
                                   </uix:NClick>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,337" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Object">[row("Label")]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:String">["Saved"]</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                  </ui:CommentOut>
+                                  <ui:WriteCell WorkbookPathResource="{x:Null}" Cell="[&quot;D&quot; + (ExtractDataTable.Rows.IndexOf(row) + 2).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="[shipDate.ToString(&quot;d-M-yy&quot;)]" Text="Saved" WorkbookPath="[Path.Combine(newFolderPath, &quot;Shipments.xlsx&quot;)]" />
                                 </Sequence>
                               </ActivityAction>
                             </uix:NApplicationCard.Body>
@@ -590,31 +803,19 @@
                               </uix:VerifyExecutionOptions>
                             </uix:NClick.VerifyOptions>
                           </uix:NClick>
-                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save As" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,1539" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Save As" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="554,1896" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
                                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                 </ActivityAction.Argument>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1238" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1595" sap2010:WorkflowViewState.IdRef="Sequence_20">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Focus on address bar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,249" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" InteractionMode="HardwareEvents" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)]" Version="V5">
-                                    <uix:NKeyboardShortcuts.VerifyOptions>
-                                      <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                        <uix:VerifyExecutionOptions.Retry>
-                                          <InArgument x:TypeArguments="x:Boolean" />
-                                        </uix:VerifyExecutionOptions.Retry>
-                                        <uix:VerifyExecutionOptions.Timeout>
-                                          <InArgument x:TypeArguments="x:Double" />
-                                        </uix:VerifyExecutionOptions.Timeout>
-                                      </uix:VerifyExecutionOptions>
-                                    </uix:NKeyboardShortcuts.VerifyOptions>
-                                  </uix:NKeyboardShortcuts>
-                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,296" sap2010:WorkflowViewState.IdRef="NTypeInto_8" Text="[Path.Combine(newFolderPath, trackingNumber) &amp; &quot;[k(enter)]&quot;]" Version="V5">
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,296" sap2010:WorkflowViewState.IdRef="NTypeInto_11" Text="[trackingNumber + &quot;-invoice&quot;]" Version="V5">
                                     <uix:NTypeInto.VerifyOptions>
                                       <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
                                         <uix:VerifyExecutionTypeIntoOptions.Retry>
@@ -626,27 +827,53 @@
                                       </uix:VerifyExecutionTypeIntoOptions>
                                     </uix:NTypeInto.VerifyOptions>
                                   </uix:NTypeInto>
-                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,413" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,411" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                                     <ui:CommentOut.Body>
-                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,302" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,300" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into 'Address: Downloads'" EmptyFieldMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="HardwareEvents" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Text="[Path.Combine(newFolderPath, trackingNumber) + &quot;[k(enter)]&quot;]" Version="V5">
-                                          <uix:NTypeInto.Target>
-                                            <uix:TargetAnchorable CVScreenId="c5a5b1a7-2149-475d-b1f8-950e687c4762" ContentHash="auL6d8U8EEKOQGQ12FHZJA" DesignTimeRectangle="152, 41, 505, 34" ElementType="Toolbar" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd aaname='Loading' cls='msctls_progress32' /&gt;&lt;wnd ctrlid='1001' title='Address: Downloads' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Loading' cls='msctls_progress32' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' title='Address: Downloads' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' /&gt;" Guid="3ae99acb-f4d0-4067-a503-4c751ed3397a" InformativeScreenshot="243b718777ecf4f1773671a7ccd2d6b0.png" Reference="D5pikt_6Kk2kct3wAk-2VQ/IYEL5k12kEms1b-MCIAj3w" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
-                                              <uix:TargetAnchorable.PointOffset>
-                                                <uix:PointOffset Position="BottomRight" X="-23" Y="-17" />
-                                              </uix:TargetAnchorable.PointOffset>
-                                            </uix:TargetAnchorable>
-                                          </uix:NTypeInto.Target>
+                                        <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Focus on address bar" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,240" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" InteractionMode="HardwareEvents" Shortcuts="[d(hk)][d(alt)]d[u(alt)][u(hk)]" Version="V5">
+                                          <uix:NKeyboardShortcuts.VerifyOptions>
+                                            <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionOptions.Retry>
+                                              <uix:VerifyExecutionOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionOptions.Timeout>
+                                            </uix:VerifyExecutionOptions>
+                                          </uix:NKeyboardShortcuts.VerifyOptions>
+                                        </uix:NKeyboardShortcuts>
+                                      </Sequence>
+                                    </ui:CommentOut.Body>
+                                  </ui:CommentOut>
+                                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,458" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                                    <ui:CommentOut.Body>
+                                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,347" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ClipboardMode="Never" DisplayName="Type Into" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,287" sap2010:WorkflowViewState.IdRef="NTypeInto_8" Text="[Path.Combine(newFolderPath, currentCarrier, trackingNumber) &amp; &quot;[k(enter)]&quot;]" Version="V5">
+                                          <uix:NTypeInto.VerifyOptions>
+                                            <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                                              <uix:VerifyExecutionTypeIntoOptions.Retry>
+                                                <InArgument x:TypeArguments="x:Boolean" />
+                                              </uix:VerifyExecutionTypeIntoOptions.Retry>
+                                              <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                                <InArgument x:TypeArguments="x:Double" />
+                                              </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                                            </uix:VerifyExecutionTypeIntoOptions>
+                                          </uix:NTypeInto.VerifyOptions>
                                         </uix:NTypeInto>
                                       </Sequence>
                                     </ui:CommentOut.Body>
                                   </ui:CommentOut>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,220" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,227" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="15997661-338a-4b9d-a085-3ac4c05ee5d7" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable CVScreenId="fee264cd-0e67-44fc-b1e6-5f788bb1dab7" CvElementArea="747, 489, 88, 26" CvTextArea="778, 495, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="747, 489, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="ffee9450-ef5a-4762-ab89-43449e1b8e96" InformativeScreenshot="6a17286a8e2f294d00055aa763e54c8a.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
@@ -667,6 +894,7 @@
                                       </uix:VerifyExecutionOptions>
                                     </uix:NClick.VerifyOptions>
                                   </uix:NClick>
+                                  <ui:WriteCell WorkbookPathResource="{x:Null}" Cell="[&quot;E&quot; + (ExtractDataTable.Rows.IndexOf(row) + 2).ToString]" DisplayName="Write Cell Workbook" sap:VirtualizedContainerService.HintSize="486,141" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="[shipDate.ToString(&quot;d-M-yy&quot;)]" Text="Saved" WorkbookPath="[Path.Combine(newFolderPath, &quot;Shipments.xlsx&quot;)]" />
                                 </Sequence>
                               </ActivityAction>
                             </uix:NApplicationCard.Body>

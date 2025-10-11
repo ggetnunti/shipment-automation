@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Log in",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "MOj1hsX54kSU61bHMjxRfQ",
+  "Reference": "D5pikt_6Kk2kct3wAk-2VQ/MOj1hsX54kSU61bHMjxRfQ",
+  "ParentRef": "D5pikt_6Kk2kct3wAk-2VQ/HrkLnLQufUq9vmeWOuLBKg",
+  "Created": "2025-10-10T06:34:10.7241134Z",
+  "Updated": "2025-10-10T06:34:10.7241134Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=25.10.16.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

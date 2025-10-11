@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0_hJMqemuEeZ87UjgMnnKA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com/manufacturing/shipments" CVScreenId="53b6bcea-9086-418d-a013-7a9a2f0571f7" CvType="AnyWordGroup" DesignTimeRectangle="279, 309, 165, 19" ElementType="Text" ElementVisibilityArgument="Interactive" Guid="a641c384-6c13-4192-9155-f51e8ebe83d3" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Shipments - Manufacturing - Plaid ERP' /&gt;" SearchSteps="CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="20fdd270ef540690eb30edfd8ed1edde.png" xmlns="">0tqvc0oSkNkW71nkcS_ROKg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

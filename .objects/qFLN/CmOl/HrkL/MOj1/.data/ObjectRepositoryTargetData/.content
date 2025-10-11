@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7YeLomOPS0W9wudJsB4G4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com" CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" CvElementArea="866, 639, 205, 35" CvTextArea="948, 650, 40, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="949, 646, 38, 22" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl class='ng-star-inserted' tag='SPAN' type='' aaname='Log in' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Log in' /&gt;" Guid="d21fb2c7-419e-4047-b01e-655b22b19bbc" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Plaid ERP' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" CvElementArea="866, 639, 205, 35" CvTextArea="948, 650, 40, 16" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="868, 641, 201, 32" ElementType="Button" FuzzySelectorArgument="&lt;webctrl aaname='Log in' tag='BUTTON' type='' class='ant-btn login-form-button ant-btn-primary' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Log in' /&gt;" Guid="fe6b1a00-1b4d-4859-aee7-3fa12bc70aec" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8f3a9e58c80ef6f27f5c0f97be2c4843.png" xmlns="">0Q5gSPBKJrkiOgNvTCbICNw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

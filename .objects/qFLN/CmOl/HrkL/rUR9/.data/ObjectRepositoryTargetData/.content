@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P3HiDPKJxEemsU339dRJzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="orders.mccapparel.com" CVScreenId="4ee5a16d-b772-4c28-a0d2-9a80e53e0ea3" CvTextArea="897, 425, 141, 19" CvTextArgument="MCC Apparel Login" CvType="Text" DesignTimeRectangle="868, 404, 201, 57" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='MCC Apparel Login' tag='DIV' /&gt;" Guid="0caeeb74-76e1-4026-912b-c5fbf5e0a3d4" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login - Plaid ERP' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8b220f07d99a9dbf05ecf0dbca89d9c4.png" xmlns="">0C_5xAXkQYUS47idjGE10HQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
